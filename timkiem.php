@@ -2,6 +2,7 @@
 include 'header.php';
 include './assets/db/connect.php';
 $category = mysqli_query($conn, "SELECT * from category where `show` = 1");
+$category = mysqli_query($conn, "SELECT * from category where `show` = 1");
 $new_product = mysqli_query($conn, "SELECT * from product where `show` = 1 ORDER BY `id` DESC LIMIT 10");
 //  tìm kiếm
 	if(isset($_POST['search'])){
